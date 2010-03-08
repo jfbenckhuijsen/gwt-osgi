@@ -1,0 +1,27 @@
+<!DOCTYPE module PUBLIC "//gwt-module/" "http://google-web-toolkit.googlecode.com/svn/tags/2.0.0/distro-source/core/src/gwt-module.dtd">
+<module>
+
+      <!-- Inherit the core Web Toolkit stuff.                        -->
+      <inherits name='com.google.gwt.user.User'/>
+
+      <!--  inherit css based theme -->
+      <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+      
+      <!-- Inherits gwt-comet -->
+      <inherits name="net.zschech.gwt.comet.Comet" />
+
+	  <inherits name="com.google.gwt.rpc.RPC" />
+
+	  <servlet class="com.google.code.gwtosgi.server.PluginServiceImpl" path="/plugins"/>
+	  
+	  <servlet class="net.zschech.gwt.comet.server.CometServlet" path="/comet"/>
+	  
+	  <servlet class="com.atlassian.plugin.servlet.ServletModuleContainerServlet" path="/modules"/>
+
+      <!-- Specify the app entry point class.                         -->
+      <entry-point class='com.google.code.gwtosgi.client.Application'/>
+
+      <!-- Specify the application specific style sheet.              -->
+      <stylesheet src='Application.css' />
+
+</module>
