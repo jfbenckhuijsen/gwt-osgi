@@ -1,0 +1,1 @@
+This project aims to integrate GWT and OSGi using Atlassian-plugin, thus providing a in-application plugin system. This system can be used to dynamically manage the functionality of the system, which is captured in various modules.
